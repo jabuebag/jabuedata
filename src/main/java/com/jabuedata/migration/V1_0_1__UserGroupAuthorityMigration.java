@@ -5,6 +5,9 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 import java.util.Date;
 
+/**
+ * create user , authorities and group tables.
+ */
 public class V1_0_1__UserGroupAuthorityMigration implements SpringJdbcMigration {
 
     JdbcTemplate jdbcTemplate;
