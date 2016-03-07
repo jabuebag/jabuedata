@@ -5,9 +5,6 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 import java.util.Date;
 
-/**
- * create user , authorities and group tables.
- */
 public class V1_0_1__UserGroupAuthorityMigration implements SpringJdbcMigration {
 
     JdbcTemplate jdbcTemplate;
@@ -42,7 +39,7 @@ public class V1_0_1__UserGroupAuthorityMigration implements SpringJdbcMigration 
                         "  introduction         LONGTEXT," +
                         "  date_created         DATETIME NOT NULL," +
                         "  date_last_login      DATETIME," +
-                        "  date_updated         DATETIME," +
+                        "  last_updated         DATETIME," +
                         "  enabled              BOOL," +
                         "  account_expired      BOOL," +
                         "  account_locked       BOOL," +
@@ -187,15 +184,15 @@ public class V1_0_1__UserGroupAuthorityMigration implements SpringJdbcMigration 
                 new Object[]{
                         "admin",
                         "NATIVE",
-                        "sdutyang@gmail.com",
+                        "hong.zhu@ybagapp.com",
                         "$2a$10$b65G59vXvvE4pCr7V2adVO1pk0um7T.n2s7sB2oOCXTZqrUtUyibq", //password: admin123
                         false,
-                        "Jabue",
-                        "Yang",
+                        "Hong",
+                        "Zhu",
                         "MALE",
-                        "7786812128",
+                        "6047886488",
                         "Computer Programmer",
-                        "jabue",
+                        "Yidai No. 1",
                         rootGroupId,
                         0L,
                         true,
@@ -254,7 +251,7 @@ public class V1_0_1__UserGroupAuthorityMigration implements SpringJdbcMigration 
                 new Object[]{
                         "host",
                         "NATIVE",
-                        "sdutyang@outlook.com",
+                        "info@ybagapp.com",
                         "$2a$08$VK4KHoEVHPjOp.6VsMb70O2EqA65vR5HuhIDpXX1qElPXd304eWsa", //password: host123
                         false,
                         "host",
@@ -262,7 +259,7 @@ public class V1_0_1__UserGroupAuthorityMigration implements SpringJdbcMigration 
                         "MALE",
                         "3383673365",
                         "Student",
-                        "jabue",
+                        "Yidai No. 1",
                         hostGroupId,
                         0L,
                         true,
@@ -321,7 +318,7 @@ public class V1_0_1__UserGroupAuthorityMigration implements SpringJdbcMigration 
                 new Object[]{
                         "guest",
                         "NATIVE",
-                        "sdutyang@163.com",
+                        "info@ybagapp.com",
                         "$2a$08$xD05fRathu10WWigRXHBbeUmMc7wWtyI8FhcReUUNeBXVx/XEMXNO", //password: guest123
                         false,
                         "guest",

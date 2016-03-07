@@ -3,9 +3,6 @@ package com.jabuedata.migration;
 import org.flywaydb.core.api.migration.spring.SpringJdbcMigration;
 import org.springframework.jdbc.core.JdbcTemplate;
 
-/**
- * create image tables
- */
 public class V1_0_2__ImageMigration implements SpringJdbcMigration {
 
 

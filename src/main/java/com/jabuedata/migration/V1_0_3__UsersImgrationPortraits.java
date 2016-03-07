@@ -5,9 +5,6 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 import java.util.Date;
 
-/**
- * Created by jabue on 16-03-01.
- */
 public class V1_0_3__UsersImgrationPortraits implements SpringJdbcMigration {
 
     JdbcTemplate jdbcTemplate;

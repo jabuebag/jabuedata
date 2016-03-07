@@ -3,9 +3,6 @@ package com.jabuedata.migration;
 import org.flywaydb.core.api.migration.spring.SpringJdbcMigration;
 import org.springframework.jdbc.core.JdbcTemplate;
 
-/**
- * Created by jabue on 16-03-01.
- */
 public class V1_0_4__RegionMigration implements SpringJdbcMigration {
 
     JdbcTemplate jdbcTemplate;
